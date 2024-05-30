@@ -3,9 +3,9 @@
 To use the app you will need to insert a token in the login page.<br>
 You can get a valid token by logging in [here](https://gorest.co.in/).<br>
 !!! Without a valid token the app will not work properly !!!<br>
-The app has 2 **main** pages:
-- Users page
-- Posts page
+The app has 2 **main** sections:
+- Users section
+- Posts section
 
   In the users page you will be able to interact with all the app's members.<br>
   By clicking on a user's name you will be able to access his profile,create a post and deleting the account.<br>
