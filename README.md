@@ -20,9 +20,9 @@ The app has 2 **main** sections:
 ## Requirements
 Make sure you have [node.js](https://nodejs.org/en), Angular ("npm install -g @angular/cli" in terminal after downloading node.js) and [VSC](https://code.visualstudio.com/) .<br>
 ## How to use:
-Clone the repository in a folder or view the finished project [here](https://angular-project-6e408.web.app) 
+Clone the repository in a folder and open it in VSC or view the finished project [here](https://angular-project-6e408.web.app) 
 ## Development server
-
+Navigate to the project's folder in the terminal.<br>
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
