@@ -13,7 +13,7 @@ The app has 2 **main** pages:
   In the posts page you will find all the available posts.<br>
   You can choose any post by scrolling down the list on the left or using the search bar.
   You can also add a comment to a selected post.<br>
-  Once you are done using the app you can exit the by clicking 'Logout'. (top right options icon)
+  Once you are done using the app you can exit by clicking 'Logout'. (top right options icon)
 
   *This app makes GET,POST,DELETE requests using the API's from gorest.co.in
 
