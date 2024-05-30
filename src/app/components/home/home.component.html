@@ -1,0 +1,27 @@
+<nav>
+    <div class="links">
+        <a routerLink="users" routerLinkActive="active"><img src="../../../assets/images/users-icon.png">Users</a>
+        <a routerLink="posts" routerLinkActive="active"><img src="../../../assets/images/posts-icon.png">Posts</a>
+    </div>
+    <div class="settings" [hidden]="isHidden">
+        <div class="new-user" [hidden]="newUserHidden">
+            <form action="" [formGroup]="newUser" (ngSubmit)="saveData()">
+                <img src="../../../assets/images/exit-icon.png" (click)="addUser()">
+                <input type="text" placeholder="Name" formControlName="name">
+                <input type="email" placeholder="Email" formControlName="email">
+                <select name="gender" id="gender" formControlName="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <button type="submit" (click)="addUser()">Add</button>
+            </form>
+        </div>
+        <a (click)="addUser()">New Account</a>
+        <a routerLink="" (click)="deleteToken()">Logout</a>
+    </div>
+    <img src="../../../assets/images/settings.png" title="Settings" (click)="settings()">
+</nav>
+<div class="main" *ngIf="router.url==='/home'">
+    <h1>Welcome Back</h1>
+</div>
+<router-outlet></router-outlet>

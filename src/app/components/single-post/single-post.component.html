@@ -1,0 +1,16 @@
+<div class="single-post" *ngIf="router.url!=='/home/posts/undefined'">
+    <h1>{{post.title}}</h1>
+    <p>{{post.body}}</p>
+</div>
+<div class="not-exist" *ngIf="router.url==='/home/posts/undefined'">
+    <h1>The post doesn't exist.</h1>
+    <h1>Make sure you typed the name correctly</h1>
+</div>
+<div class="comment-list" *ngIf="router.url!=='/home/posts/undefined'">
+    <h1>Comments</h1>
+    <p *ngFor="let comment of comments">{{comment.name}}: <br> {{comment.body}}</p>
+</div>
+<form class="add-comment" [formGroup]="newComment" (ngSubmit)="saveData(post.id)" *ngIf="router.url!=='/home/posts/undefined'">
+    <input type="text" placeholder="add-comment" formControlName="body">
+    <button type="submit">Send</button>
+</form>

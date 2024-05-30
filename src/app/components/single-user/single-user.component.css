@@ -1,0 +1,435 @@
+
+.user-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+    margin-top: 40px;
+    width: 100%;
+
+}
+.user-data p{
+    color: #3eb489;
+    font-weight: 600;
+}
+h1{
+    color: #3eb489;
+    font-weight: 600;
+    text-align: center;
+}
+.post-list{
+    padding-left: 10px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: hidden ;
+}
+.post-list:hover{
+    overflow-y: auto;
+}
+.post-list a{
+    text-decoration: none;
+    margin-right: 50px;
+    margin-top: 10px !important;
+    color: #3eb489;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid #3eb489;
+}
+.post-list a:hover{
+    border-color: #fff;
+}
+.add-post{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    z-index: 4;
+    width: 60%;
+    height: 50vh;
+    background-color: #bef5b3;
+    padding: 10px;
+    border-radius: 8px;
+}
+.add-post form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.add-post form img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.add-post form input{
+    color: #fff;
+    border-color:#fff ;
+    width: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 8px;
+    outline: none;
+}
+img{
+    height: 20px;
+    cursor: pointer;
+}
+.add-post form input::placeholder{
+    color: #fff;
+}
+.add-post form textarea{
+    width: 80%;
+    height: 30vh;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    padding: 10px 0 0 10px;
+    overflow-y: auto;
+}
+.add-post form textarea::placeholder{
+    color: #fff;
+}
+button{
+    background-color: transparent;
+    color: #3eb489;
+    border-radius: 20px;
+    padding: 8px;
+    border: 2px solid #3eb489;
+    margin-left: 50px;
+    cursor: pointer;
+}
+button:hover{
+    border-color: #fff;
+}
+.add-post form button{
+    color: #fff;
+    border-color: #fff;
+    width: 80px;
+}
+.post-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh ;
+}
+.post-top > button{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+.user-data{
+    gap: 5px;
+    margin-top: 5px;
+}
+.user-data p{
+    font-size: 6px;
+}
+h1{
+    font-size: 18px;
+}
+.post-list a{
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 3px;
+    border: 1px solid #3eb489;
+}
+.add-post{
+    top: 35%;
+    left: 30%;
+}
+.add-post form{
+    gap: 5px;
+}
+.add-post form img{
+    top: 5px;
+    right: 5px;
+}
+.add-post form input{
+    border: 1px solid #fff;
+    padding: 3px;
+    font-size: 8px;
+}
+img{
+    height: 10px;
+}
+.add-post form textarea{
+    border: 1px solid #fff;
+    padding: 5px 0 0 5px;
+    font-size: 8px;
+}
+button{
+    padding: 3px;
+    border: 1px solid #3eb489;
+    font-size: 10px;
+}
+
+.add-post form button{
+    margin-left: 0;
+    width: 40px;
+}
+
+.post-top > button{
+    margin-top: 0px;
+    margin-left: 40px;
+    font-size: 8px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .user-data{
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .user-data p{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .post-list a{
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #3eb489;
+    }
+    .add-post{
+        top: 35%;
+        left: 30%;
+    }
+    .add-post form{
+        gap: 10px;
+    }
+    .add-post form img{
+        top: 10px;
+        right: 10px;
+    }
+    .add-post form input{
+        border: 2px solid #fff;
+        padding: 5px;
+        font-size: 12px;
+    }
+    img{
+        height: 14px;
+    }
+    .add-post form textarea{
+        border: 2px solid #fff;
+        padding: 10px 0 0 10px;
+        font-size: 12px;
+    }
+    button{
+        padding: 5px;
+        border: 2px solid #3eb489;
+        font-size: 12px;
+    }
+    
+    .add-post form button{
+        margin-left: 0;
+        width: 50px;
+    }
+    
+    .post-top > button{
+        margin-top: 5px;
+        margin-left: 50px;
+        font-size: 12px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .user-data{
+        gap: 25px;
+        margin-top: 15px;
+    }
+    .user-data p{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    .post-list a{
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 8px;
+        border: 2px solid #3eb489;
+    }
+    .add-post{
+        top: 35%;
+        left: 30%;
+    }
+    .add-post form{
+        gap: 20px;
+    }
+    .add-post form img{
+        top: 10px;
+        right: 10px;
+    }
+    .add-post form input{
+        border: 2px solid #fff;
+        padding: 8px;
+        font-size: 16px;
+    }
+    img{
+        height: 18px;
+    }
+    .add-post form textarea{
+        border: 2px solid #fff;
+        padding: 10px 0 0 10px;
+        font-size: 16px;
+    }
+    button{
+        padding: 8px;
+        border: 2px solid #3eb489;
+        font-size: 16px;
+    }
+    
+    .add-post form button{
+        margin-left: 0;
+        width: 70px;
+    }
+    
+    .post-top > button{
+        margin-top: 1px;
+        margin-left: 80px;
+        font-size: 16px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+
+    .user-data{
+        gap: 80px;
+        margin-top: 40px;
+        width: 100%;
+    
+    }
+    .user-data p{
+        color: #3eb489;
+        font-weight: 600;
+    }
+    h1{
+        color: #3eb489;
+        font-weight: 600;
+    }
+    .post-list{
+        padding-left: 10px;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-y: hidden ;
+    }
+    .post-list:hover{
+        overflow-y: auto;
+    }
+    .post-list a{
+        text-decoration: none;
+        margin-right: 50px;
+        margin-top: 50px;
+        color: #3eb489;
+        padding: 8px;
+        border-radius: 20px;
+        border: 2px solid #3eb489;
+    }
+    .post-list a:hover{
+        border-color: #fff;
+    }
+    .add-post{
+        position: fixed;
+        top: 40%;
+        left: 35%;
+        z-index: 4;
+        width: 60%;
+        height: 50vh;
+        background-color: #bef5b3;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .add-post form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .add-post form img{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .add-post form input{
+        color: #fff;
+        border-color:#fff ;
+        width: 50%;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 8px;
+    }
+    img{
+        height: 20px;
+        cursor: pointer;
+    }
+    .add-post form input::placeholder{
+        color: #fff;
+    }
+    .add-post form textarea{
+        width: 80%;
+        height: 30vh;
+        outline: none;
+        resize: none;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 8px;
+        border: 2px solid #fff;
+        padding: 10px 0 0 10px;
+        overflow-y: auto;
+    }
+    .add-post form textarea::placeholder{
+        color: #fff;
+    }
+    button{
+        background-color: transparent;
+        color: #3eb489;
+        border-radius: 20px;
+        padding: 8px;
+        border: 2px solid #3eb489;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    button:hover{
+        border-color: #fff;
+    }
+    .add-post form button{
+        color: #fff;
+        border-color: #fff;
+        width: 80px;
+    }
+    .post-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5vh ;
+    }
+    .post-top > button{
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+}

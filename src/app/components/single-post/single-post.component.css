@@ -1,0 +1,228 @@
+h1{
+    color: #fff;
+}
+p{
+    color: #3eb489;
+    text-align: center;
+}
+.single-post{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    overflow: hidden;
+    padding: 20px 20px 0 20px;
+    border-bottom: 3px solid #fff;
+    overflow-x: hidden;
+}
+.single-post p{
+    height: 90%;
+    width: 100%;
+    word-break: break-all;
+    white-space: normal;
+    padding: 0 10px 0 10px;
+    overflow-y: auto;
+}
+.single-post:hover{
+    overflow-y: auto;
+}
+
+
+.comment-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    overflow: hidden;
+}
+.comment-list:hover{
+    overflow-y: auto;
+}
+.add-comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.add-comment input{
+    width: 250px !important;
+    padding: 8px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #3eb489;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: transparent;
+    color: #3eb489;
+}
+.add-comment input::placeholder{
+    color: #3eb489;
+}
+.add-comment button{
+    padding: 8px;
+    color: #3eb489;
+    background-color: transparent;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 2px solid #3eb489;
+    cursor: pointer;
+    font-weight: 700;
+}
+.add-comment button:hover{
+    background-color: #fff;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 16px;
+    }
+    p{
+        font-size: 8px;
+    }
+    .single-post{
+        height: 30vh;
+        border-bottom: 2px solid #fff;
+        padding: 0;
+        width: 80%;
+        margin-left: 25px;    
+    }
+    .comment-list{
+        height: 30vh;
+    }
+    .add-comment{
+        padding-top: 10px;
+    }
+    .add-comment input{
+        width: 100px !important;
+        padding: 3px;
+        font-size: 8px;
+        border-width: 1px;
+    }
+    .add-comment button{
+        padding: 3px;
+        font-size: 8px;
+        border-width: 1px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .single-post{
+        height: 30vh;
+        padding: 10px 10px 0 10px;
+        border-bottom: 2px solid #fff;
+    }
+    .comment-list{
+        height: 30vh;
+    }
+    .add-comment{
+        padding-top: 10px;
+    }
+    .add-comment input{
+        width: 30%;
+        padding: 5px;
+        font-size: 12px;
+        border-width: 1px;
+    }
+    .add-comment button{
+        padding: 5px;
+        font-size: 12px;
+        border-width: 1px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .single-post{
+        height: 30vh;
+        padding: 15px 15px 0 15px;
+        border-bottom: 2px solid #fff;
+    }
+    .comment-list{
+        height: 30vh;
+    }
+    .add-comment{
+        padding-top: 20px;
+    }
+    .add-comment input{
+        width: 30%;
+        padding: 8px;
+        font-size: 16px;
+        border-width: 2px;
+    }
+    .add-comment button{
+        padding: 8px;
+        font-size: 16px;
+        border-width: 2px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    h1{
+        color: #fff;
+    }
+    p{
+        color: #3eb489;
+    }
+    .single-post{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 30vh;
+        overflow: hidden;
+        padding: 20px 20px 0 20px;
+        border-bottom: 3px solid #fff;
+    }
+    
+    .comment-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 30vh;
+        overflow: hidden;
+    }
+    .add-comment{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .add-comment input{
+        width: 30%;
+        padding: 8px;
+        outline: none;
+        background-color: transparent;
+        border: 2px solid #3eb489;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-right: transparent;
+        color: #3eb489;
+    }
+    .add-comment button{
+        padding: 8px;
+        color: #3eb489;
+        background-color: transparent;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border: 2px solid #3eb489;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}

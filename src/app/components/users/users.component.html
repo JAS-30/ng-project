@@ -1,0 +1,15 @@
+<div class="body">
+    <div class="left-side">
+        <h1>Users</h1>
+        <!--user list ngfor in a-->
+        <a  routerLink="{{user.id}}" *ngFor="let user of users">{{user.name}}</a>
+    </div>
+    <div class="right-side">
+        <div class="search-bar">
+            <input #search type="text" placeholder="Search for a user..." (blur)="getQuery(search.value)">
+            <img src="../../../assets/images/search-bar-icon.png" [routerLink]="[userSearch(getQuery(search.value))]">
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+    
