@@ -1,9 +1,26 @@
 # Project
+## Description
+To use the app you will need to insert a token in the login page.<br>
+You can get a valid token by logging in [here](https://gorest.co.in/).<br>
+Without a valid token the app will not work properly.
+The app has 2 **main** pages:
+- Users page
+- Posts page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+  In the users page you will be able to interact with all the app's members.<br>
+  By clicking on a user's name you will be able to access his profile,create a post and deleting the account.<br>
+  You can also create an account by clicking the icon on the top right corner.<br>
+  In the posts page you will find all the available posts.<br>
+  You can choose any post by scrolling down the list on the left or using the search bar.
+  You can also add a comment to a selected post.<br>
+  Once you are done using the app you can exit the by clicking 'Logout'. (top right options icon)
+
+  *This app makes GET,POST,DELETE requests using the API's from gorest.co.in
+
 ## Requirements
-
-
+Make sure you have [node.js](https://nodejs.org/en), Angular ("npm install -g @angular/cli" in terminal after downloading node.js) and [VSC](https://code.visualstudio.com/) .<br>
+## How to use:
+Clone the repository or view the finished project [here](https://angular-project-6e408.web.app) 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
